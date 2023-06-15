@@ -6,13 +6,15 @@
     .container {
      position: absolute;
     bottom: 5px;
-    
     background-color: rgba(0, 0, 0, 0);
     color: black;
     padding-left: 5px;
     padding-right: 5px;
     font-size: 16px;
+}
+.header {
     text-align: center;
+    padding: 32px;
 }
      .btn {
     background-color: rgba(0, 0, 0, 0.2);
@@ -26,13 +28,15 @@
     font-size: 16px;
 }
    </style>
+  
   <body>
     <a-scene>
       <a-sky src="khram2.jpeg" scale="3 3 3" rotation="0 100 0"></a-sky>
     </a-scene>
     
+    <div class="header" id="myHeader">
       <div class="container">
     <form action="https://faerlou.github.io/ARGo/"><button class="btn">ВЫХОД</button></form></div>
-  
+  </div>
   </body>
 </html>
