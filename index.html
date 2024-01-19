@@ -1,36 +1,21 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/@google/model-viewer@3.4.0/dist/model-viewer.min.js"></script>
   </head>
-   <style>
-     .container {
-     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    color: black;
-    padding-left: 1px;
-    padding-right: 1px;
-    font-size: 16px;
-}
-     .btn {
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid #8b95e7;
-    border-radius: 2px;
-    color: white; /* White text */
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    font-size: 16px;
-}
-   </style>
   
-  <body>
-    <a-scene>
-      <a-sky src="khram2.jpg" scale="3 3 3" rotation="0 100 0"></a-sky>
-    </a-scene>
-   <div class="container">
-    <form action="https://faerlou.github.io/ARGo/"><button class="btn">ВЫХОД</button></form></div>
-  </body>
+  <style>
+  model-viewer {
+width: 800px;
+height: 400px;
+  }
+  </style>
+  
+  <body style="margin : 0px; overflow: hidden;">
+    <model-viewer 
+    src="shnjacka.glb"
+    ar
+    >
+    </model-viewer> 
+ </body>
 </html>
