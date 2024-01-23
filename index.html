@@ -5,29 +5,15 @@
   </head>
   
   <style>
-   
   </style>
   
   <body style="margin : 0px; overflow: hidden;">
-    <model-viewer id="reveal" loading="eager" camera-controls touch-action="pan-y" auto-rotate poster="Logo.jpg"
-      shadow-intensity="1" alt="A 3D model of a shishkebab"
-    src="shnjacka.glb" 
-    ar
-    >
-      <button slot="ar-button"
-    style="background-color: white; /* Green */
-    border: 2px solid #e7e7e7;
-    color: black;
-    padding: 30px 64px;
-    text-align: center;
-    text-decoration: none;
-      
-    display: inline-block;
-    font-size: 32px;
-    margin: 4px 2px;
-    cursor: pointer; ">
-    Activate AR
-  </button>
-    </model-viewer> 
+    <model-viewer
+      alt="AR" src="shnjacka.glb"
+      ar
+      environment-image="Logo.jpg" poster="Logo.jpg"
+      shadow-intensity="1"
+      camera-controls touch-action="pan-y">
+    </model-viewer>
  </body>
 </html>
