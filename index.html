@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="module" src="https://unpkg.com/@google/model-viewer@3.4.0/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
   </head>
   
   <style>
-  model-viewer {
-width: 800px;
-height: 400px;
-  }
+    model-viewer {
+width: 90%;
+height: 90%;
+    }
   </style>
   
   <body style="margin : 0px; overflow: hidden;">
-    <model-viewer 
-    src="shnjacka.glb"
+    <model-viewer id="reveal" loading="eager" camera-controls touch-action="pan-y" auto-rotate poster="Logo.jpg"
+      shadow-intensity="1" alt="A 3D model of a shishkebab"
+    src="shnjacka.glb" 
     ar
     >
+      <button slot="ar-button"
+    style="background-color: white; /* Green */
+    border: 2px solid #e7e7e7;
+    color: black;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+      
+    display: inline-block;
+    font-size: 32px;
+    margin: 4px 2px;
+    cursor: pointer; ">
+    Activate AR
+  </button>
     </model-viewer> 
  </body>
 </html>
