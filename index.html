@@ -13,6 +13,21 @@
       id="model-viewer" src="shnjacka.glb" ar ar-modes="scene-viewer webxr" camera-controls touch-action="pan-y" alt="A 3D model of an astronaut" shadow-intensity="2"
       skybox-image="" skybox-height="2m" max-camera-orbit="auto 90deg auto">
   <div id="error" class="hide">AR is not supported on this device</div>
+        
+        
+        <div class="contentarea">
+  <div class="camera">
+    <video id="video">Video stream not available.</video>
+    <button id="startbutton">Take photo</button> 
+  </div>
+  <canvas id="canvas">
+  </canvas>
+  <div class="output">
+    <img id="photo" alt="The screen capture will appear in this box."> 
+  </div>
+</div>
+
+        
 </model-viewer>
 
         <script>
@@ -45,17 +60,7 @@
 </style>
 
 
-    <div class="contentarea">
-  <div class="camera">
-    <video id="video">Video stream not available.</video>
-    <button id="startbutton">Take photo</button> 
-  </div>
-  <canvas id="canvas">
-  </canvas>
-  <div class="output">
-    <img id="photo" alt="The screen capture will appear in this box."> 
-  </div>
-</div>
+    
 
     
     
