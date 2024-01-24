@@ -7,20 +7,62 @@
   
   <style>
     model-viewer {
-width: 800px;
-height: 400px;
+margin: 150px auto 75px;
+display: block;
+width: 1000px;
+height: 1000px;
     }
   </style>
   
   <body style="margin : 0px; overflow: hidden;">
+    
+    <model-viewer 
+     src="shnjacka.glb"
+     <model-viewer src="shnjacka.glb" poster="logoml.jpg" ar ar-placement="wall" camera-controls touch-action="pan-y" alt="A 3D model of some wall art">
+      <button 
+    slot="ar-button" 
+    style="background-image: url('button.png');
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+    margin-right: 10px;
+    border: none;
+     border-radius: 100px;
+   margin: 50px auto 100px;
+   display: block;">
+  </button>
+    </model-viewer>
+  
 
-<model-viewer id="model-viewer" src="shnjacka.glb"
-  ar ar-modes="scene-viewer webxr" camera-controls touch-action="pan-y"
+<model-viewer id="model-viewer"
+  src="shnjacka.glb"
+  
+  ar ar-modes="scene-viewer webxr"
+  camera-controls touch-action="pan-y"
   alt="A 3D model of an astronaut" shadow-intensity="2"
-  skybox-image="Logo.jpg"
-  skybox-height="2m" max-camera-orbit="auto 90deg auto">
+ 
+  
+ <!-- skybox-image="../../shared-assets/environments/spruit_sunrise_1k_HDR.jpg"
+ skybox-height="2m" max-camera-orbit="auto 90deg auto"> -->
+  
+  
   <div id="error" class="hide">AR is not supported on this device</div>
+  <button 
+    slot="ar-button" 
+    style="background-image: url('button2.png');
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+    margin-right: 10px;
+    border: none;
+     border-radius: 100px;
+   margin: 50px auto 100px;
+   display: block;">
+  </button>
+    </model-viewer>
 </model-viewer>
+
+    
 <script>
   document.querySelector("#model-viewer").addEventListener('ar-status', (event) => {
     if(event.detail.status === 'failed'){
